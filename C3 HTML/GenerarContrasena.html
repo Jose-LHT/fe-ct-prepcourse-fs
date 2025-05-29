@@ -3,56 +3,64 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="reset.css">
-    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="styles-GC.css">
     <title>Generar Contraseña</title>
 </head>
 <body>
     <header>
-        <nav>
-        <a href="./index.html">Home</a>
-        <a href="./GenerarContrasena.html">Generar Contraseña</a>
-        <a href="./CajaFuerte.html">Caja Fuerte</a>
-        <a href="./MonitoreoActividad.html">Monitoreo de Actividad</a>
-        <a href="./GestionUsuarios.html">Gestion de Usuarios</a>
-        </nav>
+        <div class="header">
+            <img src="Captura de pantalla 2025-05-26 222016.png" alt="">
+            <nav class="menu">
+            <a href="./index.html">Home</a>
+            <a href="./GenerarContrasena.html">Generar Contraseña</a>
+            <a href="./CajaFuerte.html">Caja Fuerte</a>
+            <a href="./MonitoreoActividad.html">Monitoreo de Actividad</a>
+            <a href="./GestionUsuarios.html">Gestion de Usuarios</a>
+            </nav>
+        </div>
     </header>
     <main>
-        <section>
-            <h1>Asistente De Seguridad</h1>
-        </section>
-        <section>
-            <h5>Generador de Contraseña para Usuarios:</h5>
-        </section>
-        <section>
-            <form action="">
-                <div>
-                    <label>
+        <div class="contenedor">
+            <section>
+                <h1 id="Titulo">Asistente De Seguridad</h1>
+            </section>
+            <section id="Subtitulo">
+                <h5>Generador de Contraseña para Usuarios:</h5>
+            </section>
+            <section class="form">
+                <form action="">
+                    <div>
+                        <label>
                         Cantidad de caracteres deseados
                         <input type="text" name="CantidadCarac">
-                    </label>
-                </div>
-                <div>
+                        </label>
+                    </div>
+                    <div>
                     <label> 
                         ¿Incluir caracteres especiales?
                         <input type="text" name="Carac_Espec">
                     </label>
-                </div>
-                <div>
+                    </div>
+                    <div>
                     <label>
                         ¿Incluir Caracteres Numeros?
                         <input type="text" name="Carac_Num">
                     </label>
-                </div>
-                <div>
+                     </div>
+                    <div>
                     <label>
                         ¿Incluir Caracteres Mayusculas?
                         <input type="text" name="Carac_Mayus">
                     </label>
-                </div>
-                <button>Generar Contraseña</button>
-            </form>
-        </section>
+                    </div>
+                    <div class="Button">
+                    <button>Generar Contraseña</button>
+                    </div>
+                    <div>
+                </form>
+            </section>
+        </div>
     </main>
     <footer>
 

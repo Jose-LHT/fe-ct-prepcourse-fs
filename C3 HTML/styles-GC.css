@@ -27,21 +27,22 @@ a:hover{
     padding: 0.1em 0.8em 0.2em 0.8em;
     transition: 1s;
 }
-button{
+Button{
     background-color: rgb(32, 32, 32);
     color: #ffffff;
-    padding: 0.6em 1em 0.5em 1em;
+    padding: 0.8em 1.2em 0.8em 1.2em;
     border-radius: 0.8em;
-    margin: 0.5em;
+    font-size: 1em;
 }
 label{
-    margin: 0.5em;
+    padding: 0.5em;
 }
 input {
     box-shadow:0em 0.1em 0.2em rgba(0,0,0.01);
     border: none;
     border-radius: 0.3em;
     font-size: 1.2em;
+    width: 2em;
     padding: 0.4em 0.3em 0.3em 0.3em;
   }
 input:hover{
@@ -51,6 +52,10 @@ input:focus{
     box-shadow:0em 0.2em 0.3em rgba(0,0,0.01); 
     border: none;
     outline: none;
+}
+
+form div{
+    margin: 2em;
 }
 .header{
     display: flex;
@@ -67,13 +72,17 @@ input:focus{
 .form{
     display: flex;
     justify-content: center;
-    margin: 2em;
+    margin: 1em;
 }
 .Validar{
     display: flex;
     justify-content: center;
 }
-#TituloCF{
+.Button{
+    display: flex;
+    justify-content: center;
+}
+#Titulo{
     color: black;
     margin:1em;
     display: flex;
@@ -83,9 +92,5 @@ input:focus{
 #Subtitulo{
     display: flex;
     justify-content: center;
-}
-#Button{
-    display: flex;
-    justify-content: center;
-    margin: 1em;
+    font-size: 1.2em;
 }

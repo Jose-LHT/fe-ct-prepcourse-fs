@@ -3,60 +3,65 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="reset.css">
-    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="styles-GU.css">
     <title>Gestion de Usuarios</title>
 </head>
 <body>
     <header>
-        <nav>
-        <a href="./index.html">Home</a>
-        <a href="./GenerarContrasena.html">Generar Contraseña</a>
-        <a href="./CajaFuerte.html">Caja Fuerte</a>
-        <a href="./MonitoreoActividad.html">Monitoreo de Actividad</a>
-        <a href="./GestionUsuarios.html">Gestion de Usuarios</a>
-        </nav>
+        <div class="header">
+            <img src="Captura de pantalla 2025-05-26 222016.png" alt="">
+            <nav class="menu">
+            <a href="./index.html">Home</a>
+            <a href="./GenerarContrasena.html">Generar Contraseña</a>
+            <a href="./CajaFuerte.html">Caja Fuerte</a>
+            <a href="./MonitoreoActividad.html">Monitoreo de Actividad</a>
+            <a href="./GestionUsuarios.html">Gestion de Usuarios</a>
+            </nav>
+        </div>
     </header>
     <main>
+        <div class="contenedor">
         <section>
-            <h1>
-                Asistente De Seguridad
-            </h1>
-        </section>
-        <section>
-            <h5>
-                GESTION DE PERFILES
-            </h5>
-        </section>
-        <Section>
-            <form>
-                <div>
-                    <label>Ver Perfiles <input type="text" name="Ver" placeholder="Titulo"></label>
-                    <button>VER</button>
-                </div>
-                <Div>
-                    <Label>Ver Perfiles Por Antiguedad</Label>
-                    <button>VER</button>
-                </Div>
-                <div>
-                    <label> Ver Administradores</label>
-                    <button>VER</button>
-                </div>
-                <div>
-                    <h6>
+                <h1 id="Titulo">
+                    Asistente De Seguridad
+                </h1>
+            </section>
+            <section id="Subtitulo">
+                <h5>
+                    GESTION DE PERFILES
+                </h5>
+            </section>
+            <Section class="form">
+                <form>
+                    <div>
+                        <label>Ver Perfiles <input type="text" name="Ver" placeholder="Titulo"></label>
+                        <button>VER</button>
+                    </div>
+                    <Div>
+                        <Label>Ver Perfiles Por Antiguedad</Label>
+                        <button>VER</button>
+                    </Div>
+                    <div>
+                        <label> Ver Administradores</label>
+                        <button>VER</button>
+                    </div>
+                    <h6 id="Subtitulo1">
                         Modificar Acceso
                     </h6>
-                    <label>
-                        Usuario
-                        <input type="text" name="Usuario">
-                    </label>
-                    <br>
-                    <label>Nuevo Codigo de Acceso <input type="text" name="NuevoCod"></label>
-                    <br>
-                    <button>ACTUALIZAR</button>
-                </div>
-            </form>
-        </Section>
+                    <div class="form1">
+                        <label>
+                            Usuario
+                            <input type="text" name="Usuario">
+                        </label>
+                        <br>
+                        <label>Nuevo Codigo de Acceso <input type="text" name="NuevoCod"></label>
+                        <br>
+                        <button>ACTUALIZAR</button>
+                    </div>
+                </form>
+            </Section>
+        </div>
     </main>
     <footer>
 
