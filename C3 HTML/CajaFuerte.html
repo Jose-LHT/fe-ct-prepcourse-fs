@@ -3,55 +3,60 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="reset.css">
-    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="Styles-CF.css">
     <title>Caja Fuerte</title>
 </head>
 <body>
     <header>
-        <nav>
-        <a href="./index.html">Home</a>
-        <a href="./GenerarContrasena.html">Generar Contraseña</a>
-        <a href="./CajaFuerte.html">Caja Fuerte</a>
-        <a href="./MonitoreoActividad.html">Monitoreo de Actividad</a>
-        <a href="./GestionUsuarios.html">Gestion de Usuarios</a>
-        </nav>
+        <div class="header">
+            <img src="Captura de pantalla 2025-05-26 222016.png" alt="">
+            <nav class="menu">
+            <a href="./index.html">Home</a>
+            <a href="./GenerarContrasena.html">Generar Contraseña</a>
+            <a href="./CajaFuerte.html">Caja Fuerte</a>
+            <a href="./MonitoreoActividad.html">Monitoreo de Actividad</a>
+            <a href="./GestionUsuarios.html">Gestion de Usuarios</a>
+            </nav>
+        </div>
     </header>
 
     <main>
-        <section>
-            <h1>Asistente De Seguridad</h1>
-        </section>
-        <section>
-            <h5>CAJA FUERTE</h5>
-        </section>
-        <section>
-            <form>
-            <div>
-                <label>
-                    Codigo Secreto
-                    <input type="text" name="Codigo">
-                </label>
-                
-                <label>
-                    Cantidad de Intentos 
-                    <input type="number" name="Cantidad"> 
-                </label>
-               
-                <button type="button">Enviar</button>
-            </div>
-            <div>
-                <label>
-                    Validar Codigo Secreto
-                    <input type="text" name="Validar">
-                </label>
-                <br>
-                <button>Validar Codigo</button>
-                <button>Reset</button>
-            </div>
-            </form>
-        </section>
-    </main>
+        <div class="contenedor">
+            <section>
+                <h1 id="TituloCF">Asistente De Seguridad</h1>
+            </section>
+            <section id="Subtitulo">
+                <h5>CAJA FUERTE</h5>
+            </section>
+            <section class="form">
+                <form>
+                <div>
+                    <label>
+                        Código Secreto
+                        <input type="text" name="Codigo">
+                    </label>
+                    
+                    <label>
+                        Cantidad de Intentos 
+                        <input type="number" name="Cantidad"> 
+                    </label>
+                    <button>GUARDAR</button>
+                </div>
+                <div class="Validar">
+                    <label>
+                        Validar Código Secreto
+                        <input type="text" name="Validar">
+                    </label>
+                    <div id="Button">
+                    <button>VALIDAR CÓDIGO</button>
+                    <button>RESET</button>
+                    </div>    
+                </div>
+                </form>
+            </section>
+        </div>
+        </main>
     <footer>
 
     </footer>
