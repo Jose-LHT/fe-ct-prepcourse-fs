@@ -29,35 +29,37 @@
                 <h5>Generador de Contraseña para Usuarios:</h5>
             </section>
             <section class="form">
-                <form action="">
+                <form id="formulario">
                     <div>
                         <label>
-                        Cantidad de caracteres deseados
-                        <input type="text" name="CantidadCarac">
+                        Cantidad de caracteres deseados: 
+                        <input type="number" id="longitud" name="longitud" min="3" max="10" required>
                         </label>
                     </div>
                     <div>
                     <label> 
                         ¿Incluir caracteres especiales?
-                        <input type="text" name="Carac_Espec">
+                        <input type="checkbox" id="caracteresEspeciales" class="checkbox-container">
                     </label>
                     </div>
                     <div>
                     <label>
-                        ¿Incluir Caracteres Numeros?
-                        <input type="text" name="Carac_Num">
+                        ¿Incluir Caracteres Números?
+                        <input type="checkbox" id="numeros" class="checkbox-container">
                     </label>
                      </div>
                     <div>
                     <label>
-                        ¿Incluir Caracteres Mayusculas?
-                        <input type="text" name="Carac_Mayus">
+                        ¿Incluir Caracteres Mayúsculas?
+                        <input type="checkbox" id="mayusculas" class="checkbox-container">
                     </label>
                     </div>
                     <div class="Button">
-                    <button>Generar Contraseña</button>
+                    <button type="submit">Generar Contraseña</button>
                     </div>
                     <div>
+                    <h4 id="resultado">Contraseña Generada: </h4>
+                    <script src="GenerarContrasena.js"></script>
                 </form>
             </section>
         </div>
