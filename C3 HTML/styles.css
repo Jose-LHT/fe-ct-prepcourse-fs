@@ -1,33 +1,45 @@
 body {
     font-family: 'Lato', sans-serif;
-    background-color: #ffffff;
-    color: black;
-    margin: 0em;
-    font-size: medium;
-  }
-
-.header{
-    display: flex;
-    background-color: rgb(241, 241, 241);
-    align-items: center;
-    padding: 0.5em;
-}  
-.menu{
-    padding-left: 20em;
+    background-color: #fff;
+    color: #444;
+    margin: 0;
+    font-size: 1em;
 }
 a{
-    margin: 1.4em;
     text-decoration: none;
     color: inherit;
     font-weight: bold;
-    transition: 1s;
+    transition: 0.3s;
 }
-a:hover{
-    background-color: rgb(70, 70, 70);
-    color: white;
-    border-radius: 6px;
+.header{
+    display: flex;
+    background-color: #eee;
+    align-items: center;
+    padding: 0.5em;
+    font-family: inherit;
+}  
+.nav{
+    padding-left: 20em;
+}
+.nav__list{
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.nav__item{
+    margin: 0 1.5em;
+    color: #444;    
+    font-weight: bold;
+    transition: 0.5s;
+    border-radius: 0.3em;
+}
+.nav__item:hover{
+    background-color: #444;
+    color: #eee;
     padding: 0.1em 0.8em 0.2em 0.8em;
-    transition: 1s;
+    transition: 0.5s;
+    margin: 1em 0.2em;
 }
 .contenedor{
     display: flex;
@@ -39,25 +51,28 @@ a:hover{
     width: 35vw;
 
 }
-#Phrase1{
-    background-color: rgb(240, 240, 240);
+.text__p{
+    background-color: #eee;
     border-radius: 1em;
+    font-weight: 600;
     display: inline;
     padding: 0.6em;
 }
-h1{
+.text__h1{
     font-size: 5em;
     font-weight: bold;
 }
-#Security{
+.text__h2{
+    font-size: 5em;
     background-color: yellow;
     padding: 0em 0.3em 0.1em 0.3em;
     border-radius: 1em;
     margin-top: -0.6em;
 }
-#footer{
+.text__h4{
     color: #5f5e5e;
     font-size: 1.55em;
     width: 28vw;
-    font-weight: lighter;
+    font-family: inherit;
+    font-weight: 500;
 }

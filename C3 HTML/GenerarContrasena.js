@@ -62,16 +62,22 @@ function generarPassword(longitud, incluirEspeciales, incluirNumeros, incluirMay
     return "Contraseña generada: " + contrasena;
   
   }
-  document.getElementById('formulario').addEventListener('submit', function(event){event.preventDefault();
+document.getElementById('formulario').addEventListener('submit', function(event){
+    event.preventDefault();
 
-  const longitudInput = document.getElementById('longitud').valueAsNumber;
-  const incluirEspeciales = document.getElementById('caracteresEspeciales').checked;
-  const incluirNumeros = document.getElementById('numeros').checked;
-  const incluirMayusculas = document.getElementById('mayusculas').checked;
+    const longitudInput = document.getElementById('longitud').valueAsNumber;
+    const incluirEspeciales = document.getElementById('caracteresEspeciales').checked;
+    const incluirNumeros = document.getElementById('numeros').checked;
+    const incluirMayusculas = document.getElementById('mayusculas').checked;
 
-  const longValid = checkLongitud(longitudInput);
-  const resultado = generarPassword(longValid, incluirEspeciales, incluirNumeros, incluirMayusculas);
+    const longValid = checkLongitud(longitudInput);
 
-  document.getElementById('resultado').textContent = resultado;
+    // If longValid is a string, it's an error message
+    if (typeof longValid === 'string') {
+        document.getElementById('resultado').textContent = longValid;
+        return;
+    }
 
+    const resultado = generarPassword(longValid, incluirEspeciales, incluirNumeros, incluirMayusculas);
+    document.getElementById('resultado').textContent = resultado;
 });
